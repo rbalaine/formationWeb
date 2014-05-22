@@ -1,4 +1,4 @@
 formationWeb
 ============
 
-Projet avec opendatasoft sur les stations de radio
+Projet avec opendatasoft sur les étalons
