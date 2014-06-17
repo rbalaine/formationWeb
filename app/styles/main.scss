@@ -1,0 +1,79 @@
+$icon-font-path: "/bower_components/bootstrap-sass-official/vendor/assets/fonts/bootstrap/";
+
+@import 'bootstrap-sass-official/vendor/assets/stylesheets/bootstrap';
+
+// bower:scss
+@import "../bower_components/bootstrap-sass-official/vendor/assets/stylesheets/bootstrap.scss";
+// endbower
+
+//COULEURS GRISES
+$black: #000000;
+$grey-dark: #333333;
+$grey: #555555;
+$grey-light: #999999;
+$white: #ffffff;
+
+//COULEURS ROSES
+$pink:  #fe4ac2;
+$pink-light:  #fe91da;
+
+@mixin mixin($color,$align,$size) {
+    font-family: Impact;
+    color: $color;
+    text-align:$align;
+    font-size:$size;
+}
+
+body,
+.detail{
+    background:$grey-light;
+    h1{ @include mixin($grey,left,3vw); }
+    h2{ @include mixin($grey-light,left,2vw); }
+    h3{ @include mixin($pink,center,1.5vw); }
+    h4{ @include mixin($pink-light,center,1vw); }
+    h5{ @include mixin($white,center,1.5vw); }
+    p{ @include mixin($black,left,1vw); }
+}
+
+.row{
+    background:$white;
+}
+
+.selectionencart,
+.recherche,
+.footer{
+    color: $white;
+    text-align:center;
+    background-color: $pink-light;
+}
+
+.recherche,
+.contenu{
+    padding-top:2vmin;
+}
+
+.selectioncontenu{
+    margin-left:1vmin;
+    margin-right:1vmin;
+    padding-bottom:4vmin;
+}
+
+.detail{
+    padding-top:13vmin;
+    padding-bottom:13vmin;
+}
+
+.contenu{
+    img{
+        height:15vmin;
+        align: center;
+    }
+}
+
+.btn{
+    font-weight: 700;
+    color: $white;
+    background-color: $pink-light;
+    border: none;
+    border-radius: 0px;
+}
